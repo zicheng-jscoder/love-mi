@@ -1,0 +1,140 @@
+{
+    "name" : "LOVE ME",
+    "appid" : "__UNI__60781B4",
+    "description" : "",
+    "versionName" : "1.2.5",
+    "versionCode" : 125,
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Camera" : {},
+            "Geolocation" : {},
+            "Webview-x5" : {},
+            "UIWebview" : {},
+            "VideoPlayer" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ],
+                "minSdkVersion" : 21
+            },
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "将会使用您的相册或相机权限，仅用于修改头像",
+                    "NSPhotoLibraryAddUsageDescription" : "将会使用您的相册或相机权限，仅用于修改头像",
+                    "NSCameraUsageDescription" : "将会使用您的相册或相机权限，仅用于修改头像"
+                },
+                "dSYMs" : false
+            },
+            "sdkConfigs" : {
+                "geolocation" : {
+                    "system" : {
+                        "__platform__" : [ "ios", "android" ]
+                    }
+                },
+                "oauth" : {},
+                "ad" : {}
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "useOriginalMsgbox" : false
+            }
+        },
+        "nativePlugins" : {
+            "TRTCCloudUniPlugin-TRTCCloudImpl" : {
+                "__plugin_info__" : {
+                    "name" : "【官方】腾讯云实时音视频SDK",
+                    "description" : "uni-app TRTC SDK 是腾讯云实时音视频通讯解决方案在 uni-app 上的 SDK，提供实时音视频服务",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=7774",
+                    "android_package_name" : "com.nt.love",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "7774",
+                    "parameters" : {}
+                }
+            },
+            "HXR-SVGA" : {
+                "__plugin_info__" : {
+                    "name" : "SVGA动画加载播放 - [试用版，仅用于自定义调试基座]",
+                    "description" : "SVGA动画加载播放，支持云端加载和本地加载，流畅丝滑",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=11199",
+                    "android_package_name" : "",
+                    "ios_bundle_id" : "",
+                    "isCloud" : true,
+                    "bought" : 0,
+                    "pid" : "11199",
+                    "parameters" : {}
+                }
+            }
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true,
+        "permission" : {}
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3",
+    "permission" : {
+        "scope.userLocation" : {
+            "desc" : "选择地址信息"
+        },
+        "Downloader" : {
+            "description" : "文件下载，管理文件下载任务"
+        }
+    }
+}

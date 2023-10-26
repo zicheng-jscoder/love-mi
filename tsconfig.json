@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "types": ["@dcloudio/types", "@types/uni-app"],
+    "paths": {
+      "@/*": ["src/*"],
+      "~@": ["src/static/*"],
+      "~com": ["src/components/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/*.ts",
+    "./src/*.vue",
+    "./src/*.ext",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.nvue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/global.d.ts"
+  ],
+  "exclude": ["node_modules", "TrtcCloud/**.js"]
+}
